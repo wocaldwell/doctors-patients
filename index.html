@@ -5,9 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>doctors & patients</title>
         <link rel="stylesheet" type="text/css" href="lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
-    <body>
+    <body ng-app="DoctorPatientsApp">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 main-container">
+                <div class="col-xs-12" ng-view>
+                </div>
+            </div>
+        </div>
 
         <script type="text/javascript" src="lib/node_modules/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="lib/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -15,6 +21,15 @@
         <script type="text/javascript" src="lib/node_modules/angular-route/angular-route.min.js"></script>
         <script type="text/javascript" src="lib/node_modules/firebase/firebase.js"></script>
 
-            <script type="text/javascript" src="app/app.js"></script>
+        <script type="text/javascript" src="app/app.js"></script>
+        <script type="text/javascript" src="app/credentials.js"></script>
+
+
+         <script type="text/javascript" src="app/factories/DoctorFactory.js"></script>
+        <script type="text/javascript" src="app/factories/PatientFactory.js"></script>
+
+        <script type="text/javascript" src="app/controllers/DoctorCtrl.js"></script>
+        <script type="text/javascript" src="app/controllers/PatientCtrl.js"></script>
+
     </body>
 </html>
