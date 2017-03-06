@@ -1,9 +1,9 @@
 "use strict";
 
 app.factory("DoctorFactory", function($q, $http, Credentials) {
-    let doctorKeys = [];
     let getDoctors = function() {
-        let doctors = [];
+        let doctorKeys = [],
+            doctors = [];
         return $q(function(resolve, reject) {
             $http.get(`${Credentials.databaseURL}/doctors.json`)
             .then(function(doctorsObject) {
