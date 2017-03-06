@@ -1,0 +1,6 @@
+<h1>Our Doctors</h1>
+<div ng-repeat="doctor in doctors">
+    <ul class="list-group">
+        <li class="list-group-item" id="{{doctor.id}}"><a ng-href="#!/doctors/{{doctor.id}}" ><strong>Dr. {{doctor.first_name}} {{doctor.last_name}}</strong></a> {{doctor.speciality}}</li>
+    </ul>
+<div>

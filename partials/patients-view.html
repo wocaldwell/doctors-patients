@@ -1,0 +1,7 @@
+<h1>Patient List</h1>
+<div ng-repeat="patient in patients">
+    <ul class="list-group">
+        <li class="list-group-item" ><strong>{{patient.first_name}} {{patient.last_name}}</strong> {{patient.ailment}}</li>
+    </ul>
+</div>
+<a ng-href="#!/">Return to Doctor List</a>
